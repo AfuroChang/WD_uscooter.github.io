@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="工業設計碩一 張菁蘭">
+  <meta content="最便捷的智慧共享機車, 用U scooter 在台灣兜風、享受人生！！" name="description">
+
+  <meta content="sccoter, rent, 共享, usccoter, 共享經濟, app" name="keywords">
+  <script src="https://kit.fontawesome.com/eca7313d19.js" crossorigin="anonymous"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+
+ <link rel="stylesheet" href="../style/usccoter-main.css" />
+  <link rel="stylesheet" href="../style/usccoter-new-nav.css" />
+  <link rel="stylesheet" href="../style/uscooter-service.css" />
+
+
+  <title>U Sccoter service</title>
+ 
+
+</head>
+
+<header>
+
+  <!-- new nav -->
+
+  <div class="mainNavContainer">
+    <a href="../pages/uscooter.html"><img class="mainNav-logo" src="../images/logo-1.png" alt="" /></a>
+    <nav class="mainNav" id='mainNav'>
+
+      <a href='../pages/uscooter.html'>首頁</a>
+      <a class="active" href='../pages/uscooter-service.html'>服務範圍</a>
+      <a  href='../pages/uscooter-ab us.html'>關於我們</a>
+      <a href='../pages/uscooter-login.html'>登入/註冊</a>
+      <a href="javascript:void(0);" class="icon" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+    </nav>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href='../pages/uscooter.html'>首頁</a>
+    <a class="active" href='../pages/uscooter-service.html'>服務範圍</a>
+    <a href='../pages/uscooter-ab us.html'>關於我們</a>
+    <a href='../pages/uscooter-login.html'>登入/註冊</a>
+  </div>
+
+
+  <!--   nav end -->
+</header>
+
+<body>
+
+
+<section>
+  <div class="background-title">
+    <div class="case-hero">
+      <img src="../images/team1.png" alt="" /, width="100%">
+    </div>
+</section>
+<article>
+  <div class="main">
+    <div id="main-title"><br>
+      <h2>U scooter 服務範圍</h2>
+      <h4>台灣分部最廣的智能共享機車</h4>
+    </div>
+  </div>
+</article>
+
+
+ <section class="case-overview">
+    <h2 class="case-title">服務範圍</h2>
+    <h3 class="case-sub-title">U scooter服務據點廣佈全台</h3>
+  </section>
+
+
+<!--SEARCH-->
+<div class="search">
+  <div class = "map">
+    <img src = "../images/area.png"> 
+  </div>
+
+  <div class = "areas">
+    <div class = "area"> 全 台 </div>
+    <div class = "area"> 北 部 </div>
+    <div class = "area"> 中 部 </div>
+    <div class = "area"> 南 部 </div>
+    <div class = "area"> 東 部 </div>
+  </div>
+
+  <div class= "search-bottom">
+    <div class="clear">全部清除</div>
+    <div class="go">搜尋</div>
+  </div>
+</div>
+
+
+
+  <footer>
+    <div class="footer-left">
+      <div class="logo">
+        <a href="../pages/uscooter.html"><img src="../images/logo.png" alt="" / height="50px"></a><br><br>
+        <p class="footer-Copyrights">U scooter © 2022. All Rights Reserved. <br>Designed & Developed by 工業設計碩一 M11010113
+          張菁蘭 </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    /* sidebar */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      // document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      // document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "rgba(0,0,0,0)";
+    }
+
+
+    
+  </script>
+
+</body>
+
+</html>

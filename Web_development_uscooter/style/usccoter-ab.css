@@ -1,0 +1,408 @@
+:root {
+  --container-size: 100%;
+  --primary-color: #ffffff;/* white */
+  --primary-light-color: #007AFD;/* yellow */
+  --secondary-color: #ffbb2a;/* blue */
+  --secondary-light-color: #007AFD;/* light blue */
+  --primary-text-color: #434343; /* black */
+  --secondary-text-color: #848383; /* grey */
+}
+
+
+@media (min-width: 1024px) {
+  :root {
+    --container-size: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-size: 1024px;
+  }
+}
+
+@keyframes loading {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.caseList{
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+.caseList > #caseList-post{
+  min-width: 80px;
+}
+
+
+
+/* igSection */
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.igSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.igSection .photosContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.igSection .photosContainer .photoItem {
+  width: 250px;
+  height: 250px;
+  margin: 10px 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.igSection .photosContainer .photoItem .photo .filter1 {
+  display: none;
+}
+
+.igSection .photosContainer .photoItem .photo .filter1 .smalltag {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+.igSection .photosContainer .photoItem .photo .filter1 .description {
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 30px;
+}
+
+.igSection .photosContainer .photoItem .photo:hover .filter1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.igSection .photosContainer .photoItem:hover .photo {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.igSection .photosContainer .photoItem .photo {
+  background: url("../images/photo1.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+/*   background-position: cnter; */
+/*    background-position: center; */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+.igSection .photosContainer .photoItem .photo2 {
+  background: url("../images/photo7.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo3 {
+  background: url("../images/photo2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo4 {
+  background: url("../images/photo3.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo5 {
+  background: url("../images/photo4.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo6 {
+  background: url("../images/photo5.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo6 {
+  background: url("../images/photo6.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+.container > .container-img{
+  animation: loading .5s 1s 1 both ease-in-out;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  width: 70%;
+}
+
+
+
+
+/* form */
+
+.background{
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 7rem;
+  min-width: 300px;
+}
+
+
+form{
+    /* margin-left: 3rem;
+    margin-right: 3rem; */
+    align-items: center;
+    justify-content: center;
+    animation: loading .5s 0.6s 1 both ease-in-out;
+    color: var(--primary-text-color);
+ /*    top: 50%;
+    left: 50%; */
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px #DCEDFF;
+    padding-bottom: 3rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+form *{
+    color: var(--primary-text-color);
+    border: none;
+}
+
+
+label{
+    display: block;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+input{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    height: 50px;
+    width: 90%;
+/*     background-color: rgba(255,255,255,0.07); */
+    border-radius: 3px;
+    padding: 0 .5rem;
+    margin-top: .5rem;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+::placeholder{
+    color: var(--primary-text-color);
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    /* margin-left: 3rem;
+    margin-right: 3rem; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color:  var(--primary-text-color);
+    padding: 15px 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button:hover{
+  color:  var(--primary-text-color);
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+
+}
+
+
+/* ________________phone___________________ */
+
+@media screen and (min-width: 390px){
+
+  .case-overview{
+    margin: 0;
+  }
+
+  form{
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  label{ 
+    margin-top: 30px;
+    font-size: .75rem;
+  }
+  button{
+     margin-top: 0;
+    font-size: .75rem;
+  }
+  input{
+    font-size: .75rem;
+    width: 92%;
+  }
+
+}
+
+
+/* ________________pad___________________ */
+
+@media screen and (min-width: 768px){
+
+.case-overview{
+    margin: 0;
+  }
+
+  form{
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  label{
+    font-size:.9rem;
+  }
+  button{
+    font-size: .9rem;
+  }
+  input{
+    font-size: .9rem;
+    width: 93%;
+  }
+
+
+}
+
+
+/* _________________desktop__________________ */
+
+@media screen and (min-width: 1200px){
+
+  input{
+    width: 97%;
+  }
+
+
+   
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="工業設計碩一 張菁蘭">
+  <meta content="註冊最便捷的智慧共享機車, 用U scooter 在台灣兜風、享受人生！！" name="description">
+
+  <meta content="sccoter, rent, 共享, usccoter, 共享經濟, app" name="keywords">
+  <script src="https://kit.fontawesome.com/eca7313d19.js" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="../style/usccoter-main.css" /> -->
+  <link rel="stylesheet" href="../style/usccoter-new-nav.css" />
+  <link rel="stylesheet" href="../style/usccoter-formstyle.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <title>usccoter login</title>
+
+
+</head>
+
+<body>
+
+
+  <header>
+    <!-- new nav -->
+
+    <div class="mainNavContainer">
+      <a href="../pages/uscooter.html"><img class="mainNav-logo" src="../images/logo-1.png" alt="" /></a>
+      <nav class="mainNav" id='mainNav'>
+
+        <a href='../pages/uscooter.html'>首頁</a>
+        <a href='../pages/uscooter-service.html'>服務範圍</a>
+        <a href='../pages/uscooter-ab us.html'>關於我們</a>
+        <a class="active" href='../pages/uscooter-login.html'>登入/註冊</a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+      </nav>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href='../pages/uscooter.html'>首頁</a>
+      <a href='../pages/uscooter-service.html'>服務範圍</a>
+      <a href='../pages/uscooter-ab us.html'>關於我們</a>
+      <a class="active" href='../pages/uscooter-login.html'>登入/註冊</a>
+    </div>
+
+
+
+    <!--   nav end -->
+  </header>
+
+
+  <section class="background">
+    <div class="background">
+      <!--  <div class="shape"></div>
+        <div class="shape"></div> -->
+    </div>
+
+    <form>
+      <h3>會員註冊</h3>
+
+      <label for="username">使用者名稱</label>
+      <input type="text" placeholder="請輸入使用者名稱" id="使用者名稱">
+
+      <label for="username">密碼</label>
+      <input type="password" maxlength="10" placeholder="請輸入密碼 (最多十碼）" id="密碼">
+
+      <label for="password">確認密碼</label>
+      <input type="password" maxlength="10" placeholder="請再次輸入密碼 (最多十碼）" id="密碼">
+
+      <button>會員註冊</button>
+      <!--    <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  使用Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  使用Facebook</div>
+        </div>
+ -->
+      <div>
+        <p>已經有U scooter帳號？ <span id="login"><a href="#" class="discrete" target="_blank">點此登入</a></span></p>
+      </div>
+
+    </form>
+
+  </section>
+
+
+  <footer>
+    <div class="footer-left">
+      <div class="logo">
+        <a href="../pages/uscooter.html"><img src="../images/logo.png" alt="" / height="50px"></a><br><br>
+        <p class="footer-Copyrights">U scooter © 2022. All Rights Reserved. <br>Designed & Developed by 工業設計碩一 M11010113
+          張菁蘭 </p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    /* sidebar */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      // document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      // document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "rgba(0,0,0,0)";
+    }
+  </script>
+
+</body>
+
+</html>

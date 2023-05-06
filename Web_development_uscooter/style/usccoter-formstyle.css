@@ -1,0 +1,179 @@
+:root {
+  --container-size: 100%;
+  --primary-color: #ffffff;
+  --primary-light-color: #007AFD;
+  --secondary-color: #ffbb2a;
+  --primary-text-color: #434343;
+  --secondary-text-color: #848383;
+}
+
+
+@keyframes loading {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }   
+
+
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.background{
+   /*  background-image: url("../images/login-back.png"); */
+    width: 100%;
+    background-color: var(--primary-light-color);
+    height: 1000px;
+
+}
+
+
+form{
+    animation: loading .5s 0.6s 1 both ease-in-out;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px #DCEDFF;
+    padding: 50px 35px;
+}
+form *{
+    color: var(--primary-text-color);
+    border: none;
+}
+form h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+::placeholder{
+    color: var(--primary-text-color);
+}
+
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color:  var(--primary-text-color);
+    padding: 15px 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+p{
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#login{
+     font-size: 1rem;
+     color: var(--secondary-color);
+
+}
+
+.discrete{
+    font-size: 1rem;
+     color: var(--primary-light-color);
+
+}
+
+/* ________________phone___________________ */
+
+@media screen and (min-width: 390px){
+/*     .background{
+    height: 1000px;
+    } */
+
+    form{
+    position: absolute;
+    top: 60%;
+    width: 350px;
+    }
+
+}
+
+
+/* ________________pad___________________ */
+
+@media screen and (min-width: 768px){
+
+     .background{
+    height: 1000px;
+    }
+
+    form{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 420px;
+    }
+
+}
+/* ________________pad__pro_________________ */
+
+@media screen and (min-width: 990px){
+
+
+
+    form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 420px;
+    }
+
+}
+
+/* _________________desktop__________________ */
+
+@media screen and (min-width: 1200px){
+
+    form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 500px;
+    }
+}
+
+

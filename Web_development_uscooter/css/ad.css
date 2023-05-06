@@ -1,0 +1,59 @@
+/* 
+*{
+	padding:0;
+	margin:0;
+}
+ */
+
+#m1, #m2{
+	margin:0;
+	position:relative;
+	width:100%;
+	height:auto;
+	margin:auto;
+	overflow:hidden;
+}
+
+
+
+a img{
+	margin-top: 0;
+	border: none;
+}
+
+#s_pic, #v_pic{
+	position: relative;
+	width: 100%;
+	height:auto;
+}
+
+#s_pic{
+	display:none;	
+}
+
+#s_pic img, #v_pic img{
+	width:100%;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+#m1, #m2{
+	width: 80%;
+	
+}
+
+#v_pic{
+	display:none;
+}
+
+#s_pic{
+	display:block;	
+}
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

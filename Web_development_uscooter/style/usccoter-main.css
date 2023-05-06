@@ -1,0 +1,419 @@
+:root {
+  --container-size: 100%;
+  --primary-color: #ffffff;/* white */
+  --primary-light-color: #007AFD;/* yellow */
+  --secondary-color: #ffbb2a;/* blue */
+  --secondary-light-color: #007AFD;/* light blue */
+  --primary-text-color: #434343; /* black */
+  --secondary-text-color: #848383; /* grey */
+}
+
+html,
+body {
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  margin: 0;
+  color: var(--primary-text-color);
+  font-family: "roboto", sans-serif;
+
+}
+
+img {
+  /* max-width: 100%; */
+  animation: loading .5s 0.6s 1 both ease-in-out;
+}
+/* 
+.container {
+  max-width: var(--container-size);
+  margin: 0 auto;
+  padding: 0 ;
+}
+ */
+section {
+  margin-bottom: 3rem;
+  animation: loading .5s 0.3s 1 both ease-in-out;
+}
+
+h2 {
+  animation: loading .5s 0.3s 1 both ease-in-out;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+
+
+h3 {
+  animation: loading .5s 0.3s 1 both ease-in-out;
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+h4 {
+  animation: loading .5s 0.3s 1 both ease-in-out;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+
+
+}
+
+
+/* 首頁 */
+
+article:nth-child(1) {
+  background: #C60 url(../images/Intersection 1.png) no-repeat;
+  background-size: cover;
+  animation: loading 1s 1s 1 both ease-in-out;
+}
+
+.main {
+  animation: loading 1s 1s 1 both ease-in-out;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main>h4 {
+  color: white;
+}
+
+
+#main-title{
+    text-shadow: 0.1em 0.1em 0.4em var(--primary-text-color);
+    top: 40%;
+    left: 50%;
+}
+
+
+.case-title {
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.case-sub-title {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+
+
+.intro-section {
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.intro-info a {
+  color: #3397f7;
+}
+
+.intro-info > .logo {
+  width: 24.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-image {
+  display: flex;
+}
+
+.case-overview-wrapper,
+.case-intro-wrapper,
+.case-price-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.case-intro-wrapper:nth-of-type(1) {
+  margin-bottom: 6.25rem;
+}
+
+.case-overview-title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.case-description {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.case-intro-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.case-intro-title>.case-intro-img {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.case-price-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #31d272;
+}
+
+.caseList {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+ .case-intro-img:hover {
+     opacity:0.5;
+  }
+
+
+
+
+@media screen and (max-width: 900px) {
+
+  html,
+  body {
+    font-size: 1.125rem;
+  }
+
+  section {
+    margin-bottom: 6.25rem;
+  }
+
+  .about-hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-hero img {
+    width: 100%;
+    margin: 5rem;
+  }
+
+  .intro-section>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .case-intro-title>.case-intro-img {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .case-overview-wrapper,
+  .case-intro-wrapper,
+  .case-price-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-intro-img>#app-img {
+    padding-top: 10rem;
+    margin-top: 10rem;
+  }
+
+ 
+
+  h2 {
+  font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: .75rem;
+  }
+
+  .main {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+/*   transform: translate(-50%, -50%); */
+  }
+}
+
+
+
+.map{
+  position: relative;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+  width: 86%;
+  margin-left: 7%;
+}
+
+.map img{
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+  h2 {
+  font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+  }
+
+  h4 {
+    font-size: 0.35rem;
+  }
+
+ .main {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  }
+}
+
+/* ________________phone___________________ */
+
+@media screen and (min-width: 390px){
+
+  .main {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  }
+
+  .case-hero img{
+  margin-top: 60px;
+}
+
+
+.intro-section {
+  padding: 0;
+
+}
+
+.intro-info> .logo{
+  margin-left: 80px;
+   margin-right: 80px;
+
+  height: 40px;
+  width: auto;
+  justify-content: center;
+
+}
+
+.intro-image{
+  height: 300px;
+  width: auto;
+  margin-bottom: 4rem;
+
+}
+
+.app-mockup img{
+  display: flex;
+ /*  justify-content: center;  */
+  align-items: center; 
+   margin: 30px;
+   max-width: 250px;
+}
+
+
+}
+
+
+/* ________________pad___________________ */
+
+@media screen and (min-width: 768px){
+
+
+  .main {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  }
+
+
+  .case-hero img{
+  margin-top: 50px;
+}
+
+
+.intro-image{
+  height: 500px;
+  width: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+
+}
+
+.intro-info > p{
+margin-left: 100px;
+  margin-right:100px;
+  text-align: center;
+}
+.intro-info> .logo{
+  margin-left: 100px;
+  margin-right:100px;
+  height: 80px;
+  width: auto;
+
+}
+
+.app-mockup img{
+
+   max-width: 500px;
+}
+}
+
+
+/* ________________pad___________________ */
+
+@media screen and (min-width: 800px){
+
+  .main {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  }
+
+}
+
+/* _________________desktop__________________ */
+
+@media screen and (min-width: 1200px){
+
+ .main {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  }
+
+   
+}
+
+
+
+
+
+

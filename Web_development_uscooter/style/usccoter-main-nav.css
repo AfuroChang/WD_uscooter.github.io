@@ -1,0 +1,120 @@
+:root {
+  --container-size: 100%;
+  --primary-color: #ffffff;/* white */
+  --primary-light-color: #007AFD;/* yellow */
+  --secondary-color: #ffbb2a;/* blue */
+  --secondary-light-color: #007AFD;/* light blue */
+  --primary-text-color: #434343; /* black */
+  --secondary-text-color: #848383; /* grey */
+}
+
+
+@media (min-width: 1024px) {
+  :root {
+    --container-size: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-size: 1024px;
+  }
+}
+
+@keyframes loading {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+/* NAV */
+nav{
+  background-color: var(--primary-color);
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  width:100%;
+  text-align:center;
+  font-size: 1rem;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 0 40px var(--secondary-text-color);
+ 
+}
+
+nav ul {
+  margin: 0 0;
+}
+
+nav li{
+  display: inline-block;
+  position: relative;
+}
+nav li a{
+  display:inline-block;
+  padding:20px;
+  color: black;
+  text-decoration: none;
+}
+
+nav img{
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 20%;
+}
+
+nav li a:hover{
+
+  color: var(--primary-light-color);
+/*   #007AFD */
+}
+
+nav:hover{
+  color: var(--primary-light-color);
+
+}
+
+
+/* footer */
+
+
+footer{
+  animation: loading 1s 0.6s 1 both ease-in-out;
+  background-color: var(--secondary-text-color);
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  font: 1.25rem;
+  padding: 60px ;
+  overflow: hidden;
+  color: white;
+  margin: 0px;
+
+
+}
+
+.footer-Copyrights{
+  font-size: .85rem;
+}
+
+
+
+/* ________________300___________________ */
+@media screen and (min-width: 300px){
+
+.case-hero img{
+  margin-top: 50px;
+}
+
+.footer-Copyrights{
+  font-size: .5rem;
+}
+
+
+}
+
+
